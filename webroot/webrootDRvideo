@@ -1,0 +1,76 @@
+﻿SELECT Sco_Materiais.gmt_codigo, 
+		SUM(Estoque_A.qtde )
+	         as "Final_Valor" ,
+	        (
+			(SELECT SUM(Movimentos_v.quantidade) 
+			FROM agh.sce_movimento_materiais Movimentos_v
+			JOIN agh.sco_materiais Sco_Materiais_v  ON Sco_Materiais_v.codigo = Movimentos_v.mat_codigo 	
+			AND ((Movimentos_v.tmv_seq in (44, 3, 39, 48, 11, 27, 77, 18) and Movimentos_v.ind_estorno like 'N')))
+			-
+			(SELECT COALESCE(SUM(Movimentos_v.quantidade) ,0)
+			FROM agh.sce_movimento_materiais Movimentos_v
+			JOIN agh.sco_materiais Sco_Materiais_v  ON Sco_Materiais_v.codigo = Movimentos_v.mat_codigo 
+			WHERE Movimentos_v.dt_competencia = Movimentos.dt_competencia 	
+			AND
+			Movimentos_v.tmv_seq in (44, 3, 39, 48, 11, 27, 77, 18 ) and Movimentos_v.ind_estorno like 'S')
+		)
+		 AS "Entradas",
+		(
+			(SELECT SUM(Movimentos_v.quantidade) 
+			FROM agh.sce_movimento_materiais Movimentos_v
+			JOIN agh.sco_materiais Sco_Materiais_v  ON Sco_Materiais_v.codigo = Movimentos_v.mat_codigo 	
+			AND ((Movimentos_v.tmv_seq in (46, 2, 43, 5, 17) and Movimentos_v.ind_estorno like 'N')))
+			-
+			(SELECT COALESCE(SUM(Movimentos_v.quantidade) ,0)
+			FROM agh.sce_movimento_materiais Movimentos_v
+			JOIN agh.sco_materiais Sco_Materiais_v  ON Sco_Materiais_v.codigo = Movimentos_v.mat_codigo 
+			WHERE Movimentos_v.dt_competencia = Movimentos.dt_competencia 	
+			AND
+			Movimentos_v.tmv_seq in (46, 2, 43, 5, 17) and Movimentos_v.ind_estorno like 'S')
+		)
+		 AS "Saidas",
+		(
+			(SELECT SUM(Movimentos_v.quantidade) 
+			FROM agh.sce_movimento_materiais Movimentos_v
+			JOIN agh.sco_materiais Sco_Materiais_v  ON Sco_Materiais_v.codigo = Movimentos_v.mat_codigo 	
+			AND ((Movimentos_v.tmv_seq = (29) and Movimentos_v.ind_estorno like 'N')))
+			-
+			(SELECT COALESCE(SUM(Movimentos_v.quantidade) ,0)
+			FROM agh.sce_movimento_materiais Movimentos_v
+			JOIN agh.sco_materiais Sco_Materiais_v  ON Sco_Materiais_v.codigo = Movimentos_v.mat_codigo 
+			WHERE Movimentos_v.dt_competencia = Movimentos.dt_competencia 	
+			AND
+			Movimentos_v.tmv_seq = (29) and Movimentos_v.ind_estorno like 'S')
+		)	
+		 AS "Menos",
+		(
+			(SELECT SUM(Movimentos_v.quantidade) 
+			FROM agh.sce_movimento_materiais Movimentos_v
+			JOIN agh.sco_materiais Sco_Materiais_v  ON Sco_Materiais_v.codigo = Movimentos_v.mat_codigo 	
+			AND ((Movimentos_v.tmv_seq = (30) and Movimentos_v.ind_estorno like 'N')))
+			-
+			(SELECT COALESCE(SUM(Movimentos_v.quantidade) ,0)
+			FROM agh.sce_movimento_materiais Movimentos_v
+			JOIN agh.sco_materiais Sco_Materiais_v  ON Sco_Materiais_v.codigo = Movimentos_v.mat_codigo 
+			WHERE Movimentos_v.dt_competencia = Movimentos.dt_competencia 	
+			AND
+			Movimentos_v.tmv_seq = (30) and Movimentos_v.ind_estorno like 'S')
+		) as "Mais",
+		 SUM(Estoque.qtde )
+	         as "Final_Valor"
+	FROM agh.sco_materiais Sco_Materiais 
+	LEFT JOIN agh.sce_movimento_materiais Movimentos ON Sco_Materiais.codigo = Movimentos.mat_codigo 
+	LEFT JOIN agh.sce_tipo_movimentos Tipo_Movimentos ON Movimentos.tmv_seq = Tipo_Movimentos.seq 
+	--LEFT JOIN agh.sco_materiais Sco_Materiais ON Sco_Materiais.codigo = Movimentos.mat_codigo 
+	--LEFT JOIN agh.sce_estq_gerais Estoque ON Sco_Materiais.codigo = Estoque.mat_codigo
+
+	LEFT JOIN agh.sce_almoxarifados Almoxarifado ON Almoxarifado.seq = Sco_Materiais.alm_seq 
+	
+	LEFT JOIN agh.sce_estq_gerais Estoque ON Estoque.mat_codigo = Sco_Materiais.codigo AND Movimentos.dt_competencia = Estoque.dt_competencia 
+	LEFT JOIN agh.sce_estq_gerais Estoque_A ON Estoque_A.mat_codigo = Sco_Materiais.codigo AND (Movimentos.dt_competencia - interval '1 month')  = Estoque_A.dt_competencia 
+	
+	WHERE Sco_Materiais.ind_situacao LIKE 'A' AND Movimentos.dt_competencia = '01/09/2017' --and Movimentos.mat_codigo = 400
+	GROUP BY Sco_Materiais.gmt_codigo, Movimentos.dt_competencia
+	ORDER BY  Sco_Materiais.gmt_codigo
+--Sco_Materiais.gmt_codigo
+--limit 1
