@@ -4,11 +4,7 @@
     }
 </style>
 
-
-
 <?= $this->Html->css('_wiki'); ?>
-
-
 <div class="container-fluid ">
     <div class="row">
         <?php foreach ($sistemas as $sistema): ?>
