@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteCond %{HTTP_HOST} ^10\.42\.0\.73$
+RewriteRule ^(.*)$sistemastrololo.com/$1 [L,R=301]
+</IfModule>
