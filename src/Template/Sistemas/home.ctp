@@ -12,7 +12,7 @@
 <div class="container-fluid ">
     <div class="row">
         <?php foreach ($sistemas as $sistema): ?>
-        <?= print_r($sistema); ?>
+        
             <div class="col-md-3">                  
                 <div class="text-center">  
                     <div class ="panel panel-success" data-toggle="tooltip" data-placement="auto" title="<?= $sistema->descricao ?>">
