@@ -9,7 +9,7 @@
 
 
 <div class="row">
-    <div class="ramais col-md-12">
+    <div class="ramais col-md-8 center-block" style="float:none;">
         <div class="box box-primary">
             <div class="box-header with-border">
                 <!-- <h3 class="box-title">
