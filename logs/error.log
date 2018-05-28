@@ -944,3 +944,249 @@ Stack Trace:
 #17 {main}
 
 
+2018-05-28 15:01:28 Error: [Cake\View\Exception\MissingHelperException] Helper class {
+    "id": 2,
+    "setor": "AlanZito",
+    "ramal": 3114
+}Helper could not be found.
+Request URL: /ramais
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(94): Cake\View\HelperRegistry->_throwMissingClassError('{\n    "id": 2,\n...', NULL)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\HelperRegistry.php(67): Cake\Core\ObjectRegistry->load('{\n    "id": 2,\n...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1094): Cake\View\HelperRegistry->__isset('{\n    "id": 2,\n...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Ramais\index.ctp(52): Cake\View\View->__get('{\n    "id": 2,\n...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include('E:\\SISTEMAS\\xam...')
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#21 {main}
+
+
+2018-05-28 18:27:53 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/paginas/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2018-05-28 18:28:05 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/paginas/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2018-05-28 18:28:07 Error: [ParseError] syntax error, unexpected '?>'
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/paginas/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#16 {main}
+
+
+2018-05-28 18:46:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /js/buscarw.js
+Referer URL: http://localhost/wiki/ramais/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-28 18:46:12 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /js/buscarw.js
+Referer URL: http://localhost/wiki/ramais/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-28 18:46:17 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /js/buscacss.js
+Referer URL: http://localhost/wiki/ramais/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-28 18:46:44 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Js could not be found.
+Request URL: /js/buscarcss.js
+Referer URL: http://localhost/wiki/ramais/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-28 18:46:54 Error: [TypeError] Argument 1 passed to Cake\View\Helper\HtmlHelper::style() must be of the type array, string given, called in E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Ramais\home.ctp on line 2
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/paginas/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Ramais\home.ctp(2): Cake\View\Helper\HtmlHelper->style('buscarcss')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include('E:\\SISTEMAS\\xam...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-05-28 19:13:00 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Css could not be found.
+Request URL: /css/topocss.css
+Referer URL: http://10.42.128.19/wiki/ramais/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(97): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
+2018-05-28 19:31:36 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Entrar could not be found.
+Request URL: /Entrar
+Referer URL: http://10.42.128.19/wiki/sistemas/home
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ControllerFactory.php(38): Cake\Http\ControllerFactory->missingController(Object(Cake\Http\ServerRequest))
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(90): Cake\Http\ControllerFactory->create(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#13 {main}
+
+
