@@ -874,3 +874,73 @@ Stack Trace:
 #18 {main}
 
 
+2018-05-25 14:53:35 Error: [ArgumentCountError] Too few arguments to function debug(), 0 passed in E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Sistemas\home.ctp on line 7 and at least 1 expected
+Request URL: /
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Sistemas\home.ctp(7): debug()
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include('E:\\SISTEMAS\\xam...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\SistemasController))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#18 {main}
+
+
+2018-05-25 14:54:10 Error: [Error] Call to undefined function print_()
+Request URL: /
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include()
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\SistemasController))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-25 14:54:11 Error: [Error] Call to undefined function print_()
+Request URL: /
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include()
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\SistemasController))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
