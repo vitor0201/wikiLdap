@@ -22,38 +22,42 @@
             </div>
             <div class="box-body">
                 <?= $this->Form->create($sistema) ?>
-                    <fieldset>
-                        <?php
-                                    echo $this->Form->input('nome');
-                                    echo $this->Form->input('url');
-                                    echo $this->Form->input('descricao',['input'=>'Descrição']);?>
-                                    <label for="">Ícone</label>
-                                    <div class="input-group">
-                                        <?=  $this->Form->text('icone', [
-                                            'default' => $this->request->query('keyword'),
-                                            'label' => 'Ícone',
-                                            'class' => 'form-control',
-                                        ] ); ?>
-                                            <span class="input-group-btn">
-                                                <?= $this->Html->link( '<i class="fa fa-paper-plane"></i>',
-                                                'https://fontawesome.com/icons?d=gallery',
-                                                        [
-                                                            'escape'=> false,
-                                                            'class' => "btn btn-flat btn-default",
-                                                            'target' => '_blank'
-                                        ]); ?>
-                                            </span>
-                                    </div>
-                                    <?php
-                                    echo $this->Form->input('botao_um',['label'=>'Botão Um']);
-                                    echo $this->Form->input('botao_um_descricao',['label'=>'Texto Botão Um']);
-                                    echo $this->Form->input('botao_dois',['label'=>'Botão Dois']);
-                                    echo $this->Form->input('botao_dois_descricao',['label'=>'Texto Botão Dois']);
-                                ?>
-                    </fieldset>
-                    <?= $this->Form->button(__('Enviar')) ?>
-                        <?= $this->Form->end() ?>
-                            </div>
+                <fieldset>
+                    <?php
+                    echo $this->Form->input('nome');
+                    echo $this->Form->input('url');             
+                    //Limita em 35 caracter
+                    echo $this->Form->input('descricao', ['input' => 'Descrição','maxlength'=>'32']);
+                    ?>
+                    <label for="">Ícone</label>
+                    <div class="input-group">
+                        <?=
+                        $this->Form->text('icone', [
+                            'default' => $this->request->query('keyword'),
+                            'label' => 'Ícone',
+                            'class' => 'form-control',
+                        ]);
+                        ?>
+                        <span class="input-group-btn">
+                            <?=
+                            $this->Html->link('<i class="fa fa-paper-plane"></i>', 'https://fontawesome.com/icons?d=gallery', [
+                                'escape' => false,
+                                'class' => "btn btn-flat btn-default",
+                                'target' => '_blank'
+                            ]);
+                            ?>
+                        </span>
+                    </div>
+                    <?php
+                    echo $this->Form->input('botao_um', ['label' => 'Botão Um']);
+                    echo $this->Form->input('botao_um_descricao', ['label' => 'Texto Botão Um']);
+                    echo $this->Form->input('botao_dois', ['label' => 'Botão Dois']);
+                    echo $this->Form->input('botao_dois_descricao', ['label' => 'Texto Botão Dois']);
+                    ?>
+                </fieldset>
+<?= $this->Form->button(__('Enviar')) ?>
+<?= $this->Form->end() ?>
             </div>
         </div>
     </div>
+</div>

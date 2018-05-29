@@ -29,8 +29,8 @@ class RamaisController extends AppController
      */
     public function index()
     {
-        $ramais = $this->paginate($this->Ramais);
-
+        //$ramais = $this->paginate($this->Ramais);
+        $ramais = $this->Ramais->find()->all();
         $this->set(compact('ramais'));
     }
 

@@ -5,11 +5,11 @@
 </style>
 
 <?= $this->Html->css('_wiki'); ?>
-<div class="container-fluid ">
+<div class="container-fluid">
     <div class="row">
         <?php foreach ($sistemas as $sistema): ?>
         
-            <div class="col-md-3">                  
+            <div class="col-lg-3 col-md-6">                  
                 <div class="text-center">  
                     <div class ="panel panel-success" data-toggle="tooltip" data-placement="auto" title="<?= $sistema->descricao ?>">
                         <!-- Nome Sistema -->

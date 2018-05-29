@@ -1,7 +1,8 @@
 
 <?= $this->Html->css("buscarcss"); ?>
-<?= $this->Html->css("topocss"); ?>
 <?= $this->Html->script("buscartablejs"); ?>
+
+<?= $this->Html->css("topocss"); ?>
 <?= $this->Html->script("topojs"); ?>
 
 <button onclick="topFunction()" id="myTopo" title="Volte ao topo">Topo</button>
@@ -9,7 +10,7 @@
 
 
 <div class="row">
-    <div class="ramais col-md-8 center-block" style="float:none;">
+    <div class="ramais col-md-10 center-block" style="float:none;">
         <div class="box box-primary">
             <div class="box-header with-border">
                 <!-- <h3 class="box-title">
@@ -32,6 +33,7 @@
             </div>
             <div class="table-responsive">
                 <div class="box-body">
+                    <!-- id="myTable" usado para realizar a pesquisa --> 
                     <table class="table table-striped table-hover liveSearch" id="myTable">
                         <thead>
                             <tr>
