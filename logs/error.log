@@ -1233,3 +1233,486 @@ Stack Trace:
 #13 {main}
 
 
+2018-05-29 19:07:21 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column ramais.created does not exist
+LINE 1: ... "Ramais__ramal" FROM wiki.ramais Ramais ORDER BY Ramais.cre...
+                                                             ^
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): PDOStatement->execute(NULL)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Statement\StatementDecorator->execute()
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(288): Cake\ORM\Query->_execute()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(133): Cake\ORM\Query->all()
+#7 E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Ramais\home.ctp(53): Cake\ORM\Query->getIterator()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include('E:\\SISTEMAS\\xam...')
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#25 {main}
+
+
+2018-05-29 19:08:28 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column ramais.created does not exist
+LINE 1: ... "Ramais__ramal" FROM wiki.ramais Ramais ORDER BY Ramais.cre...
+                                                             ^
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): PDOStatement->execute(NULL)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(288): Cake\ORM\Query->_execute()
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(133): Cake\ORM\Query->all()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Ramais\home.ctp(53): Cake\ORM\Query->getIterator()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include('E:\\SISTEMAS\\xam...')
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-05-29 19:08:28 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:08:45 Error: [PDOException] SQLSTATE[42703]: Undefined column: 7 ERROR:  column ramais.created does not exist
+LINE 1: ... "Ramais__ramal" FROM wiki.ramais Ramais ORDER BY ramais.cre...
+                                                             ^
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): PDOStatement->execute(NULL)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(288): Cake\ORM\Query->_execute()
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(133): Cake\ORM\Query->all()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Ramais\home.ctp(53): Cake\ORM\Query->getIterator()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include('E:\\SISTEMAS\\xam...')
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-05-29 19:08:45 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:08:52 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  missing FROM-clause entry for table "ramal"
+LINE 1: ... "Ramais__ramal" FROM wiki.ramais Ramais ORDER BY ramal.crea...
+                                                             ^
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): PDOStatement->execute(NULL)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(288): Cake\ORM\Query->_execute()
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(133): Cake\ORM\Query->all()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Ramais\home.ctp(53): Cake\ORM\Query->getIterator()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include('E:\\SISTEMAS\\xam...')
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-05-29 19:08:52 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:10:29 Error: [PDOException] SQLSTATE[42P01]: Undefined table: 7 ERROR:  missing FROM-clause entry for table "setor"
+LINE 1: ... "Ramais__ramal" FROM wiki.ramais Ramais ORDER BY setor.crea...
+                                                             ^
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): PDOStatement->execute(NULL)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Statement\StatementDecorator.php(174): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Log\LoggingStatement.php(56): Cake\Database\Statement\StatementDecorator->execute(NULL)
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(315): Cake\Database\Log\LoggingStatement->execute()
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Query.php(214): Cake\Database\Connection->run(Object(Cake\ORM\Query))
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(1039): Cake\Database\Query->execute()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(288): Cake\ORM\Query->_execute()
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Query.php(987): Cake\ORM\Query->_all()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\QueryTrait.php(133): Cake\ORM\Query->all()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\src\Template\Ramais\home.ctp(53): Cake\ORM\Query->getIterator()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1203): include('E:\\SISTEMAS\\xam...')
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(1164): Cake\View\View->_evaluate('E:\\SISTEMAS\\xam...', Array)
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\View\View.php(772): Cake\View\View->_render('E:\\SISTEMAS\\xam...')
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(623): Cake\View\View->render(NULL, NULL)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(125): Cake\Controller\Controller->render()
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#17 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#18 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#19 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#20 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#21 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#22 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#23 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#24 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#26 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#27 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#28 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#29 {main}
+
+
+2018-05-29 19:10:29 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:10:53 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:11:11 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:14:32 Error: [ParseError] syntax error, unexpected '->' (T_OBJECT_OPERATOR)
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\composer\ClassLoader.php(322): Composer\Autoload\includeFile('E:\\SISTEMAS\\xam...')
+#1 [internal function]: Composer\Autoload\ClassLoader->loadClass('App\\Model\\Table...')
+#2 [internal function]: spl_autoload_call('App\\Model\\Table...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Core\App.php(152): class_exists('App\\Model\\Table...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Core\App.php(64): Cake\Core\App::_classExistsInBase('\\Model\\Table\\Ra...', 'App')
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(238): Cake\Core\App::className('Ramais', 'Model/Table', 'Table')
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(193): Cake\ORM\Locator\TableLocator->_getClassName('Ramais', Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Datasource\ModelAwareTrait.php(112): Cake\ORM\Locator\TableLocator->get('Ramais')
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(358): Cake\Controller\Controller->loadModel('Ramais')
+#9 E:\SISTEMAS\xampp\htdocs\wiki\src\Controller\RamaisController.php(22): Cake\Controller\Controller->__get('Ramais')
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Controller\Controller.php(440): App\Controller\RamaisController->home()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(119): Cake\Controller\Controller->invokeAction()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\ActionDispatcher.php(93): Cake\Http\ActionDispatcher->_invoke(Object(App\Controller\RamaisController))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(108): Cake\Http\ActionDispatcher->dispatch(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Http\BaseApplication->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\RoutingMiddleware.php(104): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\RoutingMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#17 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Routing\Middleware\AssetMiddleware.php(88): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#18 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Routing\Middleware\AssetMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#19 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Error\Middleware\ErrorHandlerMiddleware.php(98): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#20 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): Cake\Error\Middleware\ErrorHandlerMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#21 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(52): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#22 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#23 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#24 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#25 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#26 {main}
+
+
+2018-05-29 19:14:32 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:15:06 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:15:14 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:15:34 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+
+2018-05-29 19:15:44 Error: [PDOException] SQLSTATE[HY000]: General error: 11 database disk image is malformed in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php on line 105
+Request URL: /ramais/home
+Referer URL: http://localhost/wiki/ramais
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlite.php(105): PDO->prepare('SELECT name FRO...')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(260): Cake\Database\Driver\Sqlite->prepare('SELECT name FRO...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(328): Cake\Database\Connection->prepare('SELECT name FRO...')
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(285): Cake\Database\Connection->query('SELECT name FRO...')
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(64): Cake\Database\Connection->execute('SELECT name FRO...', Array)
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\LazyTableTrait.php(47): Cake\Database\Schema\Collection->listTables()
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Model\Table\RequestsTable.php(52): DebugKit\Model\Table\RequestsTable->ensureTables(Array)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Table.php(291): DebugKit\Model\Table\RequestsTable->initialize(Array)
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(249): Cake\ORM\Table->__construct(Array)
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\Locator\TableLocator.php(216): Cake\ORM\Locator\TableLocator->_create(Array)
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\ORM\TableRegistry.php(132): Cake\ORM\Locator\TableLocator->get('DebugKit.Reques...', Array)
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(182): Cake\ORM\TableRegistry::get('DebugKit.Reques...')
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(53): DebugKit\ToolbarService->saveData(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#16 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#17 {main}
+
+

@@ -8,7 +8,9 @@
 
 
 
-<div class="footer-copyright text-center py-3">© 2018 SGPTI - 
-    <a href="http://www.ebserh.gov.br/web/humap-ufms"><strong>Hospital Universitário Maria Aparecida Pedrossian</strong></a>
-  </div>
+<div class="footer-copyright text-center py-12">© 2018 SGPTI - 
+    <a href="http://www.ebserh.gov.br/web/humap-ufms"><strong>Hospital Universitário Maria Aparecida Pedrossian - HUMAP</strong></a>
+    <a href="http://www.ebserh.gov.br/web/humap-ufms"> / UFMS</a>
+     
+</div>
 

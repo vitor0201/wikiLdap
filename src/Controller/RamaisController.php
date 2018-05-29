@@ -1,8 +1,10 @@
 <?php
+
 namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
+
 /**
  * Ramais Controller
  *
@@ -10,27 +12,31 @@ use Cake\Event\Event;
  *
  * @method \App\Model\Entity\Ramai[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
-class RamaisController extends AppController
-{
-    public function beforeFilter(Event $event)
-    {
+class RamaisController extends AppController {
+
+    public function beforeFilter(Event $event) {
         $this->Auth->allow('home');
     }
 
-    public function home()
-    {
-        $ramais = $this->Ramais->find()->all();
+    public function home() {
+        //$ramais = $this->Ramais->find()->all();
+        $ramais = $this->Ramais->find('all', [
+            'order' => ['ramais.setor' => 'ASC']
+        ]);
+        
         $this->set(compact('ramais'));
     }
+
     /**
      * Index method
      *
      * @return \Cake\Http\Response|void
      */
-    public function index()
-    {
-        //$ramais = $this->paginate($this->Ramais);
-        $ramais = $this->Ramais->find()->all();
+    public function index() {
+   
+        $ramais = $this->Ramais->find('all', [
+            'order' => ['ramais.setor' => 'ASC']
+        ]);
         $this->set(compact('ramais'));
     }
 
@@ -41,8 +47,7 @@ class RamaisController extends AppController
      * @return \Cake\Http\Response|void
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function view($id = null)
-    {
+    public function view($id = null) {
         $ramai = $this->Ramais->get($id, [
             'contain' => []
         ]);
@@ -55,8 +60,7 @@ class RamaisController extends AppController
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
-    public function add()
-    {
+    public function add() {
         $ramai = $this->Ramais->newEntity();
         if ($this->request->is('post')) {
             $ramai = $this->Ramais->patchEntity($ramai, $this->request->getData());
@@ -77,8 +81,7 @@ class RamaisController extends AppController
      * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
-    public function edit($id = null)
-    {
+    public function edit($id = null) {
         $ramai = $this->Ramais->get($id, [
             'contain' => []
         ]);
@@ -101,8 +104,7 @@ class RamaisController extends AppController
      * @return \Cake\Http\Response|null Redirects to index.
      * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
-    public function delete($id = null)
-    {
+    public function delete($id = null) {
         $this->request->allowMethod(['post', 'delete']);
         $ramai = $this->Ramais->get($id);
         if ($this->Ramais->delete($ramai)) {
@@ -113,4 +115,5 @@ class RamaisController extends AppController
 
         return $this->redirect(['action' => 'index']);
     }
+
 }
