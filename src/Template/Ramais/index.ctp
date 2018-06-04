@@ -1,10 +1,11 @@
-<?= $this->Html->css("buscarcss"); ?>
-<?= $this->Html->script("buscartablejs"); ?>
-
 <?= $this->Html->css("topocss"); ?>
 <?= $this->Html->script("topojs"); ?>
 
 <button onclick="topFunction()" id="myTopo" title="Volte ao topo">Topo</button>
+
+<?= $this->Html->css("jquery.dataTables.min"); ?>
+<?= $this->Html->script("jquery.dataTables.min"); ?>
+
 <div class="row">
     <div class="col-md-2" id="actions-sidebar">
         <div class="box box-primary">
@@ -26,7 +27,7 @@
         <div class="box box-primary">
             <div class="box-header with-border">
                 <h3 class="box-title">Ramais</h3>
-                  <input type="text" id="myInput" onkeyup="BuscarFunction()" placeholder="Buscar..." autofocus="true" >
+                  <!-- <input type="text" id="myInput" onkeyup="BuscarFunction()" placeholder="Buscar..." autofocus="true" > -->
             </div>
             <div class="table-responsive">
                 <div class="box-body">
@@ -81,3 +82,11 @@
     </div>
 </div>
 
+<script> 
+    <!-- Script para carregar a pesquisa da tabela -->
+  $(document).ready( function () {
+    $('#myTable').DataTable();
+} );
+</script>
+ 
+    

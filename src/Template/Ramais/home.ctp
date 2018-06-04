@@ -1,7 +1,3 @@
-
-<?php // $this->Html->css("buscarcss"); ?>
-<?php // $this->Html->script("buscartablejs"); ?>
-
 <?= $this->Html->css("topocss"); ?>
 <?= $this->Html->script("topojs"); ?>
 <!-- Botão Topo -->
@@ -10,10 +6,6 @@
 
 <?= $this->Html->css("jquery.dataTables.min"); ?>
 <?= $this->Html->script("jquery.dataTables.min"); ?>
-
-
-
-
 
 <div class="row">
     <div class="col-md-12 center-block" style="float:none;">
@@ -76,12 +68,11 @@
 </div>
 
 
-<script>
+<script> 
+    <!-- Script para carregar a pesquisa da tabela -->
   $(document).ready( function () {
     $('#myTable').DataTable();
 } );
-
-
 </script>
  
     
