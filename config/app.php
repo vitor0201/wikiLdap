@@ -10,7 +10,7 @@ return [
      * true: Errors and warnings shown.
      */
     // 'debug' => filter_var(env('DEBUG', false), FILTER_VALIDATE_BOOLEAN),
-     'debug' => (env('DEBUG', false)),
+     'debug' => (env('DEBUG', true)),
     /**
      * Configure basic information about the application.
      *
@@ -55,7 +55,6 @@ return [
             'locales' => [APP . 'Locale' . DS],
         ],
     ],
-
     /**
      * Security and encryption configuration
      *
@@ -66,7 +65,6 @@ return [
     'Security' => [
         'salt' => env('SECURITY_SALT', '__SALT__'),
     ],
-
     /**
      * Apply timestamps with the last modified time to static assets (js, css, images).
      * Will append a querystring parameter containing the time the file was modified.
@@ -78,7 +76,6 @@ return [
     'Asset' => [
         // 'timestamp' => true,
     ],
-
     /**
      * Configure the cache adapters.
      */
@@ -88,7 +85,6 @@ return [
             'path' => CACHE,
             'url' => env('CACHE_DEFAULT_URL', null),
         ],
-
         /**
          * Configure the cache used for general framework caching.
          * Translation cache files are stored with this configuration.
@@ -103,7 +99,6 @@ return [
             'duration' => '+1 years',
             'url' => env('CACHE_CAKECORE_URL', null),
         ],
-
         /**
          * Configure the cache for model and datasource caches. This cache
          * configuration is used to store schema descriptions, and table listings
@@ -119,8 +114,35 @@ return [
             'url' => env('CACHE_CAKEMODEL_URL', null),
         ],
     ],
-
-  
+    /**
+     * Configure the Error and Exception handlers used by your application.
+     *
+     * By default errors are displayed using Debugger, when debug is true and logged
+     * by Cake\Log\Log when debug is false.
+     *
+     * In CLI environments exceptions will be printed to stderr with a backtrace.
+     * In web environments an HTML page will be displayed for the exception.
+     * With debug true, framework errors like Missing Controller will be displayed.
+     * When debug is false, framework errors will be coerced into generic HTTP errors.
+     *
+     * Options:
+     *
+     * - `errorLevel` - int - The level of errors you are interested in capturing.
+     * - `trace` - boolean - Whether or not backtraces should be included in
+     *   logged errors/exceptions.
+     * - `log` - boolean - Whether or not you want exceptions logged.
+     * - `exceptionRenderer` - string - The class responsible for rendering
+     *   uncaught exceptions. If you choose a custom class you should place
+     *   the file for that class in src/Error. This class needs to implement a
+     *   render method.
+     * - `skipLog` - array - List of exceptions to skip for logging. Exceptions that
+     *   extend one of the listed exceptions will also be skipped for logging.
+     *   E.g.:
+     *   `'skipLog' => ['Cake\Network\Exception\NotFoundException', 'Cake\Network\Exception\UnauthorizedException']`
+     * - `extraFatalErrorMemory` - int - The number of megabytes to increase
+     *   the memory limit by when a fatal error is encountered. This allows
+     *   breathing room to complete logging or error handling.
+     */
     'Error' => [
         'errorLevel' => E_ALL,
         'exceptionRenderer' => 'Cake\Error\ExceptionRenderer',
@@ -128,8 +150,25 @@ return [
         'log' => true,
         'trace' => true,
     ],
-
-  
+    /**
+     * Email configuration.
+     *
+     * By defining transports separately from delivery profiles you can easily
+     * re-use transport configuration across multiple profiles.
+     *
+     * You can specify multiple configurations for production, development and
+     * testing.
+     *
+     * Each transport needs a `className`. Valid options are as follows:
+     *
+     *  Mail   - Send using PHP mail function
+     *  Smtp   - Send using SMTP
+     *  Debug  - Do not send the email, just return the result
+     *
+     * You can add custom transports (or override existing transports) by adding the
+     * appropriate file to src/Mailer/Transport. Transports should be named
+     * 'YourTransport.php', where 'Your' is the name of the transport.
+     */
     'EmailTransport' => [
         'default' => [
             'className' => 'Mail',
@@ -144,8 +183,15 @@ return [
             'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
     ],
-
-   
+    /**
+     * Email delivery profiles
+     *
+     * Delivery profiles allow you to predefine various properties about email
+     * messages from your application and give the settings a name. This saves
+     * duplication across your application and makes maintenance and development
+     * easier. Each profile accepts a number of keys. See `Cake\Mailer\Email`
+     * for more information.
+     */
     'Email' => [
         'default' => [
             'transport' => 'default',
@@ -154,8 +200,14 @@ return [
             //'headerCharset' => 'utf-8',
         ],
     ],
-
-    
+    /**
+     * Connection information used by the ORM to connect
+     * to your application's datastores.
+     * Do not use periods in database name - it may lead to error.
+     * See https://github.com/cakephp/cakephp/issues/6471 for details.
+     * Drivers include Mysql Postgres Sqlite Sqlserver
+     * See vendor\cakephp\cakephp\src\Database\Driver for complete list
+     */
     'Datasources' => [
         'default' => [
             'className' => 'Cake\Database\Connection',
@@ -177,7 +229,6 @@ return [
             'cacheMetadata' => true,
             'log' => false,
             'schema' => 'wiki',
-
             /**
              * Set identifier quoting to true if you are using reserved words or
              * special characters in your table or column names. Enabling this
@@ -187,7 +238,6 @@ return [
              * manipulated before being executed.
              */
             'quoteIdentifiers' => false,
-
             /**
              * During development, if using MySQL < 5.6, uncommenting the
              * following line could boost the speed at which schema metadata is
@@ -196,7 +246,6 @@ return [
              * which is the recommended value in production environments
              */
             //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
-
             'url' => env('DATABASE_URL', null),
         ],
         'aghu' => [
@@ -237,7 +286,6 @@ return [
                 'cacheMetadata' => true,
                 //'schema' => 'wifi',
                  'log' => false,
-
                 /**
                  * Set identifier quoting to true if you are using reserved words or
                  * special characters in your table or column names. Enabling this
@@ -247,7 +295,6 @@ return [
                  * manipulated before being executed.
                  */
                 'quoteIdentifiers' => false,
-
                 /**
                  * During development, if using MySQL < 5.6, uncommenting the
                  * following line could boost the speed at which schema metadata is
@@ -266,7 +313,6 @@ return [
              * manipulated before being executed.
              */
             'quoteIdentifiers' => false,
-
             /**
              * During development, if using MySQL < 5.6, uncommenting the
              * following line could boost the speed at which schema metadata is
@@ -276,7 +322,6 @@ return [
              */
             //'init' => ['SET GLOBAL innodb_stats_on_metadata = 0'],
         ],
-
         /**
          * The test connection is used during the test suite.
          */
@@ -298,7 +343,6 @@ return [
              'url' => env('DATABASE_TEST_URL', null),
         ],
     ],
-
     /**
      * Configures logging options
      */
@@ -328,8 +372,45 @@ return [
             'scopes' => ['queriesLog'],
         ],
     ],
-
-   
+    /**
+     * Session configuration.
+     *
+     * Contains an array of settings to use for session configuration. The
+     * `defaults` key is used to define a default preset to use for sessions, any
+     * settings declared here will override the settings of the default config.
+     *
+     * ## Options
+     *
+     * - `cookie` - The name of the cookie to use. Defaults to 'CAKEPHP'. Avoid using `.` in cookie names,
+     *   as PHP will drop sessions from cookies with `.` in the name.
+     * - `cookiePath` - The url path for which session cookie is set. Maps to the
+     *   `session.cookie_path` php.ini config. Defaults to base path of app.
+     * - `timeout` - The time in minutes the session should be valid for.
+     *    Pass 0 to disable checking timeout.
+     *    Please note that php.ini's session.gc_maxlifetime must be equal to or greater
+     *    than the largest Session['timeout'] in all served websites for it to have the
+     *    desired effect.
+     * - `defaults` - The default configuration set to use as a basis for your session.
+     *    There are four built-in options: php, cake, cache, database.
+     * - `handler` - Can be used to enable a custom session handler. Expects an
+     *    array with at least the `engine` key, being the name of the Session engine
+     *    class to use for managing the session. CakePHP bundles the `CacheSession`
+     *    and `DatabaseSession` engines.
+     * - `ini` - An associative array of additional ini values to set.
+     *
+     * The built-in `defaults` options are:
+     *
+     * - 'php' - Uses settings defined in your php.ini.
+     * - 'cake' - Saves session files in CakePHP's /tmp directory.
+     * - 'database' - Uses CakePHP's database sessions.
+     * - 'cache' - Use the Cache class to save sessions.
+     *
+     * To define a custom session handler, save it at src/Network/Session/<name>.php.
+     * Make sure the class implements PHP's `SessionHandlerInterface` and set
+     * Session.handler to <name>
+     *
+     * To use database sessions, load the SQL file located at config/schema/sessions.sql
+     */
     'Session' => [
         'defaults' => 'php',
     ],

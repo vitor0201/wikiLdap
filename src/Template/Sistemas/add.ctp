@@ -25,17 +25,18 @@
                 <fieldset>
                     <?php
                     echo $this->Form->input('nome');
-                    echo $this->Form->input('url');             
+                    echo $this->Form->input('url');
                     //Limita em 35 caracter
-                    echo $this->Form->input('descricao', ['input' => 'Descrição','maxlength'=>'32']);
+                    echo $this->Form->input('descricao', ['input' => 'Descrição', 'maxlength' => '32']);
                     ?>
                     <label for="">Ícone</label>
                     <div class="input-group">
                         <?=
-                        $this->Form->text('icone', [
+                        $this->Form->text('logo', [
                             'default' => $this->request->query('keyword'),
                             'label' => 'Ícone',
                             'class' => 'form-control',
+                            'name' => 'logo'
                         ]);
                         ?>
                         <span class="input-group-btn">

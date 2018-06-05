@@ -216,3 +216,5 @@ if (Configure::read('debug')) {
 }
 Plugin::load('TwitterBootstrap');
 Plugin::load('Search');
+
+Plugin::load('Estacoes', ['bootstrap' => false, 'routes' => true]);
