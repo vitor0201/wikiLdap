@@ -10163,6 +10163,7 @@ Stack Trace:
 #15 {main}
 
 
+<<<<<<< HEAD
 2018-06-07 13:44:11 Error: [Cake\Routing\Exception\MissingControllerException] Controller class Twitter_bootstrap could not be found.
 Exception Attributes: array (
   'class' => 'Twitter_bootstrap',
@@ -10216,5 +10217,65 @@ Stack Trace:
 #13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
 #14 E:\SISTEMAS\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
 #15 {main}
+=======
+2018-06-07 14:35:29 Error: [Seld\JsonLint\ParsingException] "C:\xampp\htdocs\wiki\composer.lock" does not contain valid JSON
+Parse error on line 10:
+... "adldap2/adldap2",<<<<<<< HEAD       
+---------------------^
+Expected: 'STRING' - It appears you have an extra trailing comma in C:\xampp\htdocs\wiki\vendor\composer\composer\src\Composer\Json\JsonFile.php on line 300
+Stack Trace:
+#0 C:\xampp\htdocs\wiki\vendor\composer\composer\src\Composer\Json\JsonFile.php(272): Composer\Json\JsonFile::validateSyntax('{\n    "_readme"...', 'C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\wiki\vendor\composer\composer\src\Composer\Json\JsonFile.php(101): Composer\Json\JsonFile::parseJson('{\n    "_readme"...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Panel\IncludePanel.php(65): Composer\Json\JsonFile->read()
+#3 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Panel\PanelRegistry.php(78): DebugKit\Panel\IncludePanel->__construct(Object(DebugKit\Panel\PanelRegistry), Array)
+#4 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(96): DebugKit\Panel\PanelRegistry->_create('DebugKit\\Panel\\...', 'Include', Array)
+#5 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(139): Cake\Core\ObjectRegistry->load('DebugKit.Includ...')
+#6 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(50): DebugKit\ToolbarService->loadPanels()
+#7 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#11 {main}
+
+
+2018-06-07 14:35:31 Error: [Seld\JsonLint\ParsingException] "C:\xampp\htdocs\wiki\composer.lock" does not contain valid JSON
+Parse error on line 10:
+... "adldap2/adldap2",<<<<<<< HEAD       
+---------------------^
+Expected: 'STRING' - It appears you have an extra trailing comma in C:\xampp\htdocs\wiki\vendor\composer\composer\src\Composer\Json\JsonFile.php on line 300
+Stack Trace:
+#0 C:\xampp\htdocs\wiki\vendor\composer\composer\src\Composer\Json\JsonFile.php(272): Composer\Json\JsonFile::validateSyntax('{\n    "_readme"...', 'C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\wiki\vendor\composer\composer\src\Composer\Json\JsonFile.php(101): Composer\Json\JsonFile::parseJson('{\n    "_readme"...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Panel\IncludePanel.php(65): Composer\Json\JsonFile->read()
+#3 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Panel\PanelRegistry.php(78): DebugKit\Panel\IncludePanel->__construct(Object(DebugKit\Panel\PanelRegistry), Array)
+#4 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(96): DebugKit\Panel\PanelRegistry->_create('DebugKit\\Panel\\...', 'Include', Array)
+#5 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(139): Cake\Core\ObjectRegistry->load('DebugKit.Includ...')
+#6 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(50): DebugKit\ToolbarService->loadPanels()
+#7 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#11 {main}
+
+
+2018-06-07 14:35:48 Error: [Seld\JsonLint\ParsingException] "C:\xampp\htdocs\wiki\composer.lock" does not contain valid JSON
+Parse error on line 10:
+... "adldap2/adldap2",<<<<<<< HEAD       
+---------------------^
+Expected: 'STRING' - It appears you have an extra trailing comma in C:\xampp\htdocs\wiki\vendor\composer\composer\src\Composer\Json\JsonFile.php on line 300
+Stack Trace:
+#0 C:\xampp\htdocs\wiki\vendor\composer\composer\src\Composer\Json\JsonFile.php(272): Composer\Json\JsonFile::validateSyntax('{\n    "_readme"...', 'C:\\xampp\\htdocs...')
+#1 C:\xampp\htdocs\wiki\vendor\composer\composer\src\Composer\Json\JsonFile.php(101): Composer\Json\JsonFile::parseJson('{\n    "_readme"...', 'C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Panel\IncludePanel.php(65): Composer\Json\JsonFile->read()
+#3 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Panel\PanelRegistry.php(78): DebugKit\Panel\IncludePanel->__construct(Object(DebugKit\Panel\PanelRegistry), Array)
+#4 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Core\ObjectRegistry.php(96): DebugKit\Panel\PanelRegistry->_create('DebugKit\\Panel\\...', 'Include', Array)
+#5 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\ToolbarService.php(139): Cake\Core\ObjectRegistry->load('DebugKit.Includ...')
+#6 C:\xampp\htdocs\wiki\vendor\cakephp\debug_kit\src\Middleware\DebugKitMiddleware.php(50): DebugKit\ToolbarService->loadPanels()
+#7 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(65): DebugKit\Middleware\DebugKitMiddleware->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response), Object(Cake\Http\Runner))
+#8 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Runner.php(51): Cake\Http\Runner->__invoke(Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#9 C:\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\Server.php(81): Cake\Http\Runner->run(Object(Cake\Http\MiddlewareQueue), Object(Cake\Http\ServerRequest), Object(Cake\Http\Response))
+#10 C:\xampp\htdocs\wiki\webroot\index.php(40): Cake\Http\Server->run()
+#11 {main}
+>>>>>>> b4ddb0a339623dd0bd8da2d060b6db5aa957bc8f
 
 

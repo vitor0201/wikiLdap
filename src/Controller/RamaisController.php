@@ -1,10 +1,8 @@
 <?php
-
 namespace App\Controller;
 
 use App\Controller\AppController;
 use Cake\Event\Event;
-
 /**
  * Ramais Controller
  *
@@ -115,5 +113,4 @@ class RamaisController extends AppController {
 
         return $this->redirect(['action' => 'index']);
     }
-
 }
