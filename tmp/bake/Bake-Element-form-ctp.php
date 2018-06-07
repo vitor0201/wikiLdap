@@ -19,36 +19,29 @@ $fields = collection($fields)
         return $schema->columnType($field) !== 'binary';
     });
 ?>
-    <div class="row">
-        <div class="col-md-2" id="actions-sidebar">
-            <div class="box box-primary">
-                <div class="box-header with-border">
-                    <h3 class="box-title">
-                        <CakePHPBakeOpenTag= __('Ações') CakePHPBakeCloseTag>
-                    </h3>
-                </div>
-                <ul class="nav nav-pills nav-stacked">
-                    <?php if (strpos($action, 'add') === false): ?>
-                        <li>
-                            <CakePHPBakeOpenTag= $this->Form->postLink(
-                        __('Deletar'),
+<div class="row">
+    <div class="col-md-2" id="actions-sidebar">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title"><CakePHPBakeOpenTag= __('Actions') CakePHPBakeCloseTag></h3>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+        <?php if (strpos($action, 'add') === false): ?>
+                <li><CakePHPBakeOpenTag= $this->Form->postLink(
+                        __('Delete'),
                         ['action' => 'delete', $<?= $singularVar ?>-><?= $primaryKey[0] ?>],
-                        ['confirm' => __('Você tem certeza que gostaria de deletar # {0}?', $<?= $singularVar ?>-><?= $primaryKey[0] ?>)]
+                        ['confirm' => __('Are you sure you want to delete # {0}?', $<?= $singularVar ?>-><?= $primaryKey[0] ?>)]
                     )
-                CakePHPBakeCloseTag>
-                        </li>
-                        <?php endif; ?>
-                            <li>
-                                <CakePHPBakeOpenTag= $this->Html->link(__('Listar {0}', '<?= $pluralHumanName ?>'), ['action' => 'index']) CakePHPBakeCloseTag>
-                            </li>
-                            <?php
+                CakePHPBakeCloseTag></li>
+        <?php endif; ?>
+                <li><CakePHPBakeOpenTag= $this->Html->link(__('List {0}', '<?= $pluralHumanName ?>'), ['action' => 'index']) CakePHPBakeCloseTag></li>
+        <?php
                 $done = [];
                 foreach ($associations as $type => $data) {
                     foreach ($data as $alias => $details) {
                         if ($details['controller'] !== $this->name && !in_array($details['controller'], $done)) {
         ?>
-                                <li>
-                                    <CakePHPBakeOpenTag= $this->Html->link(__('Listar {0}', '<?= $this->_pluralHumanName($alias) ?>'), ['controller' => '<?= $details['controller'] ?>', 'action' => 'index']) ?></li>
+                <li><CakePHPBakeOpenTag= $this->Html->link(__('List {0}', '<?= $this->_pluralHumanName($alias) ?>'), ['controller' => '<?= $details['controller'] ?>', 'action' => 'index']) ?></li>
                 <li><CakePHPBakeOpenTag= $this->Html->link(__('New {0}', '<?= $this->_singularHumanName($alias) ?>'), ['controller' => '<?= $details['controller'] ?>', 'action' => 'add']) ?></li>
         <?php
                             $done[] = $details['controller'];
@@ -62,13 +55,12 @@ $fields = collection($fields)
     <div class="<?= $pluralVar ?> col-lg-10 col-md-9">
         <div class="box box-primary">
             <div class="box-header with-border">
-                <h3 class="box-title"><CakePHPBakeOpenTag= '<?= Inflector::humanize($action) ?> <?= $singularHumanName ?>' CakePHPBakeCloseTag>
-                                        </h3>
+                <h3 class="box-title"><CakePHPBakeOpenTag= '<?= Inflector::humanize($action) ?> <?= $singularHumanName ?>' CakePHPBakeCloseTag></h3>
             </div>
             <div class="box-body">
                 <CakePHPBakeOpenTag= $this->Form->create($<?= $singularVar ?>) CakePHPBakeCloseTag>
-                    <fieldset>
-                        <CakePHPBakeOpenTagphp
+                <fieldset>
+                    <CakePHPBakeOpenTagphp
             <?php
                     foreach ($fields as $field) {
                         if (in_array($field, $primaryKey)) {
@@ -109,10 +101,10 @@ $fields = collection($fields)
                     }
             ?>
                     CakePHPBakeCloseTag>
-                    </fieldset>
-                    <CakePHPBakeOpenTag= $this->Form->button(__('Enviar')) CakePHPBakeCloseTag>
-                        <CakePHPBakeOpenTag= $this->Form->end() CakePHPBakeCloseTag>
+                </fieldset>
+                <CakePHPBakeOpenTag= $this->Form->button(__('Submit')) CakePHPBakeCloseTag>
+                <CakePHPBakeOpenTag= $this->Form->end() CakePHPBakeCloseTag>
             </div>
         </div>
     </div>
-    </div>
+</div>

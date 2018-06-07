@@ -4225,3 +4225,27 @@ Stack Trace:
 #3 {main}
 
 
+2018-06-07 13:13:38 Error: [Cake\Core\Exception\MissingPluginException] Plugin Estacoes could not be found. in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Core\Plugin.php on line 149
+Exception Attributes: array (
+  'plugin' => 'Estacoes',
+)
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\config\bootstrap.php(137): Cake\Core\Plugin::load('Estacoes', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(60): require_once('E:\\SISTEMAS\\xam...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(114): Cake\Http\BaseApplication->bootstrap()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#4 {main}
+
+
+2018-06-07 13:14:11 Error: [Cake\Core\Exception\MissingPluginException] Plugin Estacoes could not be found. in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Core\Plugin.php on line 149
+Exception Attributes: array (
+  'plugin' => 'Estacoes',
+)
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\config\bootstrap.php(137): Cake\Core\Plugin::load('Estacoes', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Http\BaseApplication.php(60): require_once('E:\\SISTEMAS\\xam...')
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(114): Cake\Http\BaseApplication->bootstrap()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#4 {main}
+
+

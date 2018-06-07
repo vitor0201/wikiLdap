@@ -121,18 +121,15 @@ Type::build('timestamp')
 
 
 
-/*
+
 if (Configure::read('debug')) {
     Plugin::load('DebugKit', ['bootstrap' => true]);
 }
-*/
-if (Configure::read('debug')) {
-    Plugin::load('DebugKit', ['bootstrap' => true, 'autoload' => true]);
-}
+
+
 
 
 Plugin::load('TwitterBootstrap');
 Plugin::load('Search');
 
 Plugin::load('Estacoes', ['bootstrap' => false, 'routes' => true]);
-Plugin::load('PontoSispe', ['bootstrap' => false, 'routes' => true]);
