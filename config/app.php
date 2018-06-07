@@ -325,6 +325,38 @@ return [
         /**
          * The test connection is used during the test suite.
          */
+        
+        'sispe' => [
+            'className' => 'Cake\Database\Connection',
+            'driver' => 'Cake\Database\Driver\Sqlserver',
+            'persistent' => false,
+            'host' => '192.168.100.202',
+            /**
+             * CakePHP will use the default DB port based on the driver selected
+             * MySQL on MAMP uses port 8889, MAMP users will want to uncomment
+             * the following line and set the port accordingly
+             */
+            'port' => '1433',
+            'username' => 'user_relatorio',
+            'password' => '1a2b3cR$',
+            'database' => 'nhu',
+            //'encoding' => 'utf8',
+            'timezone' => 'UTC',
+            'cacheMetadata' => true,
+            'schema' => 'ponto',
+            'log' => false,
+            'quoteIdentifiers' => true
+
+        /**
+         * During development, if using MySQL < 5.6, uncommenting the
+         * following line could boost the speed at which schema metadata is
+         * fetched from the database. It can also be set directly with the
+         * mysql configuration directive 'innodb_stats_on_metadata = 0'
+         * which is the recommended value in production environments
+         */
+        // 'init' => ['SET datestyle TO ISO, DMY'],
+        ],
+        
         'test' => [
             'className' => 'Cake\Database\Connection',
             'driver' => 'Cake\Database\Driver\Mysql',
