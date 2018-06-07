@@ -20,7 +20,7 @@
                             'data-actions-box'=>"true"
                             ]);
 
-                        echo $this->Form->input('actions',[
+                        echo $this->Form->input('action',[
                             'options'=> $actions, 
                             'multiple'=>true,
                             'label'=>'Ações',
