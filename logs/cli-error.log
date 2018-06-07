@@ -3701,3 +3701,527 @@ Stack Trace:
 #16 {main}
 
 
+2018-06-05 19:14:55 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Provedor TCP: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-06-05 19:29:46 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Provedor TCP: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-06-05 19:31:13 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Provedor TCP: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-06-05 19:33:51 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Provedor TCP: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-06-05 19:40:54 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Provedor TCP: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-06-05 19:46:39 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Provedor TCP: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-06-05 19:54:28 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Provedor TCP: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-06-05 19:56:37 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Provedor TCP: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\BakeShell.php(251): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(493): Bake\Shell\BakeShell->all()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#14 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#15 {main}
+
+
+2018-06-05 19:57:55 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]Provedor TCP: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:03:47 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:07:20 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:07:43 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:09:43 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:14:21 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:16:56 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:18:11 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:26:46 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:28:15 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:35:25 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:50:32 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:57:26 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-05 20:57:47 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-06 12:16:09 Error: [PDOException] SQLSTATE[08001]: [Microsoft][ODBC Driver 13 for SQL Server]TCP Provider: Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente.
+ in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php on line 48
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\PDODriverTrait.php(48): PDO->__construct('sqlsrv:Server=1...', 'user_relatorio', '1a2b3cR$', Array)
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Driver\Sqlserver.php(107): Cake\Database\Driver\Sqlserver->_connect('sqlsrv:Server=1...', Array)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\BaseSchema.php(45): Cake\Database\Driver\Sqlserver->connect()
+#3 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Dialect\SqlserverDialectTrait.php(332): Cake\Database\Schema\BaseSchema->__construct(Object(Cake\Database\Driver\Sqlserver))
+#4 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\Collection.php(52): Cake\Database\Driver\Sqlserver->schemaDialect()
+#5 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Schema\CachedCollection.php(42): Cake\Database\Schema\Collection->__construct(Object(Cake\Database\Connection))
+#6 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(369): Cake\Database\Schema\CachedCollection->__construct(Object(Cake\Database\Connection), true)
+#7 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Database\Connection.php(388): Cake\Database\Connection->getSchemaCollection()
+#8 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1034): Cake\Database\Connection->schemaCollection()
+#9 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(988): Bake\Shell\Task\ModelTask->_getAllTables()
+#10 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ModelTask.php(1003): Bake\Shell\Task\ModelTask->listAll()
+#11 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(258): Bake\Shell\Task\ModelTask->listUnskipped()
+#12 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\bake\src\Shell\Task\ControllerTask.php(61): Bake\Shell\Task\ControllerTask->listAll()
+#13 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(507): Bake\Shell\Task\ControllerTask->main()
+#14 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(500): Cake\Console\Shell->runCommand(Array, false, Array)
+#15 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#16 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#17 {main}
+
+
+2018-06-06 14:45:12 Error: [Cake\Core\Exception\MissingPluginException] Plugin PontoSispe could not be found. in E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Core\Plugin.php on line 149
+Exception Attributes: array (
+  'plugin' => 'PontoSispe',
+)
+Stack Trace:
+#0 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\Shell.php(472): Cake\Core\Plugin::load('PontoSispe')
+#1 E:\SISTEMAS\xampp\htdocs\wiki\vendor\cakephp\cakephp\src\Console\CommandRunner.php(141): Cake\Console\Shell->runCommand(Array, true)
+#2 E:\SISTEMAS\xampp\htdocs\wiki\bin\cake.php(12): Cake\Console\CommandRunner->run(Array)
+#3 {main}
+
+

@@ -33,13 +33,13 @@ $fields = collection($fields)
                             <CakePHPBakeOpenTag= $this->Form->postLink(
                         __('Deletar'),
                         ['action' => 'delete', $<?= $singularVar ?>-><?= $primaryKey[0] ?>],
-                        ['confirm' => __('Are you sure you want to delete # {0}?', $<?= $singularVar ?>-><?= $primaryKey[0] ?>)]
+                        ['confirm' => __('Você tem certeza que gostaria de deletar # {0}?', $<?= $singularVar ?>-><?= $primaryKey[0] ?>)]
                     )
                 CakePHPBakeCloseTag>
                         </li>
                         <?php endif; ?>
                             <li>
-                                <CakePHPBakeOpenTag= $this->Html->link(__('Litar {0}', '<?= $pluralHumanName ?>'), ['action' => 'index']) CakePHPBakeCloseTag>
+                                <CakePHPBakeOpenTag= $this->Html->link(__('Listar {0}', '<?= $pluralHumanName ?>'), ['action' => 'index']) CakePHPBakeCloseTag>
                             </li>
                             <?php
                 $done = [];

@@ -55,6 +55,7 @@ Router::scope('/', function (RouteBuilder $routes) {
            ->setPatterns(['id' => '[0-9]+']);
     $routes->connect('/paginas/view/:id-:url', ['controller' => 'Paginas', 'action' => 'view']);
     $routes->connect('/paginas', ['controller' => 'Paginas', 'action' => 'index']);
+//   $routes->connect('/estacoes', ['plugin' =>'Estacoes', 'controller' => 'Estacoes', 'action' => 'index']);
 
     /**
      * ...and connect the rest of 'Pages' controller's URLs.
