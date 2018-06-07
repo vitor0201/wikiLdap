@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <?= $this->Html->css(['_wiki.css']); ?>
 <div class="paginas col-md-12">
     <div class="box box-primary">
@@ -27,36 +26,6 @@
                                                aria-expanded="false" aria-controls="collapse<?= $categoria->id ?>">
                                                 <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
                                                 <?= $categoria->descricao ?>
-=======
-<?=$this->Html->css(['_wiki.css']); ?>
-        <div class="paginas col-md-12">
-            <div class="box box-primary">
-                <div class="box-header with-border">
-                <div class="row">
-                    <div class="col-lg-9">
-                        <h3 class="box-title">
-                            WIKI
-                        </h3>
-                        <!-- /input-group -->
-                    </div>
-                    <!-- /.col-lg-6 -->
-                    <?=$this->LiveSearch->searchForm(); ?>
-                </div>
-                <div class="panel-body">
-                    <div class="container-fluid">
-                        <div class="text-center col-md-10 col-sm-12">
-                            <div class="row">
-                                <!-- COMEÇO ELEMENTO DA WIKI-->
-                                <?php foreach ($categorias as $categoria): ?>
-                                <div class="col-md-6 col-sm-12 titulo">
-                                    <!-- CABEÇALHO-->
-                                    <div class="panel-heading" role="tab" id="heading<?=$categoria->id ?>">
-                                        <p class="items">
-                                            <a class="collapsed linkTitle " role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<?=$categoria->id ?>"
-                                                aria-expanded="false" aria-controls="collapse<?=$categoria->id ?>">
-                                                <span class="glyphicon glyphicon-book" aria-hidden="true"></span>
-                                                <?=$categoria->descricao ?>
->>>>>>> a9e474dd14c7c7ee5a6e45a879dbca2c5d5e315b
                                             </a>
                                         </p>
                                     </div>

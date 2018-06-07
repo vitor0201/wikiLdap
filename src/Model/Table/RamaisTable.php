@@ -52,10 +52,7 @@ class RamaisTable extends Table
             ->maxLength('setor', 255)
             ->requirePresence('setor', 'create')
             ->notEmpty('setor');
-<<<<<<< HEAD
             
-=======
->>>>>>> a9e474dd14c7c7ee5a6e45a879dbca2c5d5e315b
 
         $validator
             ->integer('ramal')

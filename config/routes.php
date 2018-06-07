@@ -49,11 +49,7 @@ Router::scope('/', function (RouteBuilder $routes) {
      * its action called 'display', and we pass a param to select the view file
      * to use (in this case, src/Template/Pages/home.ctp)...
      */
-<<<<<<< HEAD
     $routes->connect('/', ['controller' => 'Sistemas', 'action' => 'home']);
-=======
-    $routes->connect('/', ['controller' => 'Paginas', 'action' => 'home']);
->>>>>>> a9e474dd14c7c7ee5a6e45a879dbca2c5d5e315b
     $routes->connect('/paginas/view/:id-:slug', ['controller' => 'Paginas', 'action' => 'view'])
            ->setPass(['id', 'slug'])
            ->setPatterns(['id' => '[0-9]+']);
