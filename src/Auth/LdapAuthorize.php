@@ -15,12 +15,13 @@ class LdapAuthorize extends BaseAuthorize
         $usuario = ($user['usuario']);
         extract($request->params);
         $usuarios = TableRegistry::get('Usuarios');
-        $query    = $usuarios
+        $controlador = ($plugin) ? $plugin . '/'. $controller : $controller;
+        $query = $usuarios
             ->find()
             ->where(
                 [
                     'Usuarios.nome LIKE'            => $usuario,
-                    'Controladores.controller LIKE' => $controller,
+                    'Controladores.controller LIKE' => $controlador,
                     'Controladores.action LIKE'     => $action,
                     'Controladores.ativo'           => true,
                 ]
@@ -49,10 +50,6 @@ class LdapAuthorize extends BaseAuthorize
                     ],
                 ]
             );
-        debug($usuario);
-        debug($query);
-        debug(($request->session()->read()));
-        die();
         if ($query->first()) {
             return true;
         }
