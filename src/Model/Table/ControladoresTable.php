@@ -65,7 +65,7 @@ class ControladoresTable extends Table
             'multiValue' => true,
             'field' => ['controller']
         ])
-        ->add('controller', 'Search.Like', [
+        ->add('action', 'Search.Like', [
             'before' => true,
             'after' => true,
             'mode' => 'or',
