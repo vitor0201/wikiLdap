@@ -1,15 +1,21 @@
 <?php
-namespace Wifi\Model\Table;
+namespace Estacoes\Model\Table;
 
 use Cake\ORM\Query;
 use Cake\ORM\RulesChecker;
 use Cake\ORM\Table;
 use Cake\Validation\Validator;
-use Wifi\Model\Entity\Estacao;
 
 /**
  * Estacoes Model
  *
+ * @method \Estacoes\Model\Entity\Estaco get($primaryKey, $options = [])
+ * @method \Estacoes\Model\Entity\Estaco newEntity($data = null, array $options = [])
+ * @method \Estacoes\Model\Entity\Estaco[] newEntities(array $data, array $options = [])
+ * @method \Estacoes\Model\Entity\Estaco|bool save(\Cake\Datasource\EntityInterface $entity, $options = [])
+ * @method \Estacoes\Model\Entity\Estaco patchEntity(\Cake\Datasource\EntityInterface $entity, array $data, array $options = [])
+ * @method \Estacoes\Model\Entity\Estaco[] patchEntities($entities, array $data, array $options = [])
+ * @method \Estacoes\Model\Entity\Estaco findOrCreate($search, callable $callback = null, $options = [])
  */
 class EstacoesTable extends Table
 {
@@ -20,18 +26,13 @@ class EstacoesTable extends Table
      * @param array $config The configuration for the Table.
      * @return void
      */
-
-    public static function defaultConnectionName() {
-        return 'sispe';
-    }
     public function initialize(array $config)
     {
         parent::initialize($config);
 
-        $this->table('ponto.estacoes');
-       // $this->displayField('IP');
-      //$this->primaryKey('IP');
-
+        $this->setTable('ponto.estacoes');
+        $this->setDisplayField('IP');
+        $this->setPrimaryKey('IP');
     }
 
     /**
@@ -43,28 +44,24 @@ class EstacoesTable extends Table
     public function validationDefault(Validator $validator)
     {
         $validator
-        ->add('IP', 'validIp',[
-            'rule' => array('custom', '/(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])/'),
-            'message' => 'Endereço IP inválido.'
-            ])
-        ->requirePresence('IP', 'create')
-        ->requirePresence('IP', 'update')
-        ->notEmpty('IP','Campo obrigatório.');
+            ->scalar('IP')
+            ->maxLength('IP', 50)
+            ->allowEmpty('IP', 'create');
 
         $validator
-            ->add('liberaSistema', 'valid', ['rule' => 'boolean'])
+            ->boolean('liberaSistema')
             ->requirePresence('liberaSistema', 'create')
-            ->notEmpty('liberaSistema','Campo obrigatório.');
+            ->notEmpty('liberaSistema');
 
         $validator
-            ->add('biometria', 'valid', ['rule' => 'boolean'])
+            ->boolean('biometria')
             ->requirePresence('biometria', 'create')
-            ->notEmpty('biometria','Campo obrigatório.');
+            ->notEmpty('biometria');
 
         $validator
-            ->add('liberaAcessoAdministrativo', 'valid', ['rule' => 'boolean'])
+            ->boolean('liberaAcessoAdministrativo')
             ->requirePresence('liberaAcessoAdministrativo', 'create')
-            ->notEmpty('liberaAcessoAdministrativo','Campo obrigatório.');
+            ->notEmpty('liberaAcessoAdministrativo');
 
         return $validator;
     }

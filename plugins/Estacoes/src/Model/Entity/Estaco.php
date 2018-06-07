@@ -4,14 +4,14 @@ namespace Estacoes\Model\Entity;
 use Cake\ORM\Entity;
 
 /**
- * Estacao Entity.
+ * Estaco Entity
  *
  * @property string $IP
  * @property bool $liberaSistema
  * @property bool $biometria
  * @property bool $liberaAcessoAdministrativo
  */
-class Estacao extends Entity
+class Estaco extends Entity
 {
 
     /**
@@ -24,6 +24,8 @@ class Estacao extends Entity
      * @var array
      */
     protected $_accessible = [
-        '*' => true
+        'liberaSistema' => true,
+        'biometria' => true,
+        'liberaAcessoAdministrativo' => true
     ];
 }

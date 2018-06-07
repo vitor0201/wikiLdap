@@ -1,55 +1,31 @@
-<div class="panel panel-default estacoes">
-	<div class="panel-heading">
-			<div class="dropdown pull-right">
-				<button class="btn dropdown-toggle btn-sm"  type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-					<span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span>
-				</button>					
-				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-					<li> <?php echo $this->Html->link('<span class="glyphicon glyphicon-list pull-right" aria-hidden="true"></span>&nbsp; ' . __('Listagem'), ['action' => 'index'], ['escape' => false]) ?></li>
-					
-									</ul>
-			</div>
-	
-	
-            <h3>
-            Estações
-            <small>
-                        Cadastrar
-                        </small>
-            </h3>
+<div class="row">
+    <div class="col-md-2" id="actions-sidebar">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title"><?= __('Actions') ?></h3>
+            </div>
+            <ul class="nav nav-pills nav-stacked">
+                        <li><?= $this->Html->link(__('List {0}', 'Estacoes'), ['action' => 'index']) ?></li>
+                    </ul>
+        </div>
     </div>
-    
-   <?php echo $this->Form->create($estacao, [
-				'horizontal' => true, 'id' => 'FormEstacoes',
-				'cols' => [
-					'label' => 2,
-					'input' => 4,
-					'error' => 6
-				]
-			]);
-		//	debug($estacao);
-			?>
-    
-   
-   <div class="panel-body" style="position:relative;">  
-        
-		<?php 
-		//echo $this->Form->text('IP', ['label'=>'Descrição']);
-		echo $this->Form->input('IP', ['type' =>'text','label'=> ['text' => 'IP'],  'class'=>'ip_address']);
-		echo $this->Form->input('liberaSistema', ['label' => ' liberaSistema']);
-		echo $this->Form->input('biometria', ['label' => ' biometria']);
-		echo $this->Form->input('liberaAcessoAdministrativo', ['label' => ' liberaAcessoAdministrativo']);
-		?>
-  </div>
-   <div class="panel-footer"> 
-               <?= $this->Form->button(__('Salvar'), ['id' => 'FormSaveSubmit', 'class' => 'btn btn-primary']) ?>
-                
-   </div>
-    <?= $this->Form->end() ?>
+    <div class="estacoes col-lg-10 col-md-9">
+        <div class="box box-primary">
+            <div class="box-header with-border">
+                <h3 class="box-title"><?= 'Add Estaco' ?></h3>
+            </div>
+            <div class="box-body">
+                <?= $this->Form->create($estaco) ?>
+                <fieldset>
+                    <?php
+                                    echo $this->Form->input('liberaSistema');
+                                    echo $this->Form->input('biometria');
+                                    echo $this->Form->input('liberaAcessoAdministrativo');
+                                ?>
+                </fieldset>
+                <?= $this->Form->button(__('Submit')) ?>
+                <?= $this->Form->end() ?>
+            </div>
+        </div>
+    </div>
 </div>
-
-<script>
-$(document).ready(function(){
-	$('#FormEstacoes').validate({   });
-});
-</script>

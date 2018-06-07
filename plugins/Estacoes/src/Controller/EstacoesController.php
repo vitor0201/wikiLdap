@@ -7,6 +7,8 @@ use Estacoes\Controller\AppController;
  * Estacoes Controller
  *
  * @property \Estacoes\Model\Table\EstacoesTable $Estacoes
+ *
+ * @method \Estacoes\Model\Entity\Estaco[]|\Cake\Datasource\ResultSetInterface paginate($object = null, array $settings = [])
  */
 class EstacoesController extends AppController
 {
@@ -14,91 +16,92 @@ class EstacoesController extends AppController
     /**
      * Index method
      *
-     * @return void
+     * @return \Cake\Http\Response|void
      */
     public function index()
     {
+        $estacoes = $this->paginate($this->Estacoes);
 
-        $this->loadComponent('Base.PaginationSession', ['session' => 'paginatorEstacoes']);
-        $this->PaginationSession->restore();
-
-        $this->loadComponent('Base.Filter');
-        $this->Filter->addFilter([
-            'ip' => ['field' => 'ip', 'operator' => 'like']
-        ]);
-        $conditions = $this->Filter->getConditions(['session' => 'filterSituacoes']);
-        $this->set('url', $this->Filter->getUrl());
-
-        $this->paginate['conditions'] = $conditions;
-        $this->set('estacoes', $this->paginate($this->Estacoes));
-        $this->PaginationSession->save();
+        $this->set(compact('estacoes'));
     }
 
+    /**
+     * View method
+     *
+     * @param string|null $id Estaco id.
+     * @return \Cake\Http\Response|void
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
+     */
+    public function view($id = null)
+    {
+        $estaco = $this->Estacoes->get($id, [
+            'contain' => []
+        ]);
+
+        $this->set('estaco', $estaco);
+    }
 
     /**
      * Add method
      *
-     * @return void Redirects on successful add, renders view otherwise.
+     * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
     public function add()
     {
-        $estacao = $this->Estacoes->newEntity();
-
+        $estaco = $this->Estacoes->newEntity();
         if ($this->request->is('post')) {
-            $estacao = $this->Estacoes->patchEntity($estacao, $this->request->data);
-            if ($this->Estacoes->save($estacao)) {
-                $this->Flash->success(__('O registro foi salvo com sucesso.'));
+            $estaco = $this->Estacoes->patchEntity($estaco, $this->request->getData());
+            if ($this->Estacoes->save($estaco)) {
+                $this->Flash->success(__('The estaco has been saved.'));
+
+                return $this->redirect(['action' => 'index']);
             }
-            else {
-                $this->Flash->error(__('O registro não foi salvo. Por favor, tente novamente.'));
-            }
+            $this->Flash->error(__('The estaco could not be saved. Please, try again.'));
         }
-        $this->set('estacao', $estacao);
+        $this->set(compact('estaco'));
     }
 
     /**
      * Edit method
      *
-     * @param string|null $id Estacao id.
-     * @return void Redirects on successful edit, renders view otherwise.
+     * @param string|null $id Estaco id.
+     * @return \Cake\Http\Response|null Redirects on successful edit, renders view otherwise.
      * @throws \Cake\Network\Exception\NotFoundException When record not found.
      */
     public function edit($id = null)
     {
-        $estacao = $this->Estacoes->get($id, [
+        $estaco = $this->Estacoes->get($id, [
             'contain' => []
         ]);
         if ($this->request->is(['patch', 'post', 'put'])) {
-            $estacao = $this->Estacoes->patchEntity($estacao, $this->request->data);
-            if ($this->Estacoes->save($estacao)) {
-                $this->Flash->success(__('O registro foi salvo com sucesso.'));
+            $estaco = $this->Estacoes->patchEntity($estaco, $this->request->getData());
+            if ($this->Estacoes->save($estaco)) {
+                $this->Flash->success(__('The estaco has been saved.'));
+
                 return $this->redirect(['action' => 'index']);
             }
-            else {
-                $this->Flash->error(__('O registro não foi salvo. Por favor, tente novamente.'));
-            }
+            $this->Flash->error(__('The estaco could not be saved. Please, try again.'));
         }
-        $this->set(compact('estacao'));
-        $this->set('_serialize', ['estacao']);
+        $this->set(compact('estaco'));
     }
 
     /**
      * Delete method
      *
-     * @param string|null $id Estacao id.
-     * @return \Cake\Network\Response|null Redirects to index.
-     * @throws \Cake\Network\Exception\NotFoundException When record not found.
+     * @param string|null $id Estaco id.
+     * @return \Cake\Http\Response|null Redirects to index.
+     * @throws \Cake\Datasource\Exception\RecordNotFoundException When record not found.
      */
     public function delete($id = null)
     {
         $this->request->allowMethod(['post', 'delete']);
-        $estacao = $this->Estacoes->get($id);
-        if ($this->Estacoes->delete($estacao)) {
-            $this->Flash->success(__('O registro foi removido com sucesso.'));
+        $estaco = $this->Estacoes->get($id);
+        if ($this->Estacoes->delete($estaco)) {
+            $this->Flash->success(__('The estaco has been deleted.'));
+        } else {
+            $this->Flash->error(__('The estaco could not be deleted. Please, try again.'));
         }
-        else {
-            $this->Flash->error(__('O registro não foi removido. Por favor, tente novamente.'));
-        }
+
         return $this->redirect(['action' => 'index']);
     }
 }
