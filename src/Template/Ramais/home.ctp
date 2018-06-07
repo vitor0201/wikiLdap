@@ -3,7 +3,6 @@
 <!-- Botão Topo -->
 <button onclick="topFunction()" id="myTopo" title="Volte ao topo">Topo</button>
 
-
 <?= $this->Html->css("jquery.dataTables.min"); ?>
 <?= $this->Html->script("jquery.dataTables.min"); ?>
 
@@ -26,10 +25,9 @@
                 </li>            
             </ul>         
         </nav>  
-        <h3><strong><i class="fa fa-phone"></i> Lista de Ramais</h3></strong>
+        <h3><strong><i class="fa fa-phone"></i>Lista de Ramais</h3></strong>
     </div>
-
-    <div class="ramais col-md-12 center-block" style="float:none;">
+    <div class="ramais col-md-12 center-block">
         <div class="box box-primary">
             <div class="box-header with-border">                     
               
@@ -67,13 +65,8 @@
     </div>
 </div>
 
-
-<script> 
-    <!-- Script para carregar a pesquisa da tabela -->
-  $(document).ready( function () {
+<script>
+$(document).ready( function () {
     $('#myTable').DataTable();
 } );
 </script>
- 
-    
-   

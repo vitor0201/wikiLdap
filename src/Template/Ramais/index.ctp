@@ -1,11 +1,8 @@
 <?= $this->Html->css("topocss"); ?>
 <?= $this->Html->script("topojs"); ?>
-
 <button onclick="topFunction()" id="myTopo" title="Volte ao topo">Topo</button>
-
 <?= $this->Html->css("jquery.dataTables.min"); ?>
 <?= $this->Html->script("jquery.dataTables.min"); ?>
-
 <div class="row">
     <div class="col-md-2" id="actions-sidebar">
         <div class="box box-primary">
@@ -14,7 +11,6 @@
                     <?= 'Ações' ?>
                 </h3>
             </div>
-
             <ul class="nav nav-pills nav-stacked">
                 <li>
                     <?= $this->Html->link(__('Novo {0}', ['Ramal']), ['action' => 'add']) ?>
@@ -81,12 +77,9 @@
         </div>
     </div>
 </div>
-
 <script> 
     <!-- Script para carregar a pesquisa da tabela -->
   $(document).ready( function () {
     $('#myTable').DataTable();
 } );
 </script>
- 
-    
