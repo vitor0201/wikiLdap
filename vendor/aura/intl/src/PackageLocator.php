@@ -92,11 +92,11 @@ class PackageLocator implements PackageLocatorInterface
      */
     public function get($name, $locale)
     {
-        if (!isset($this->registry[$name][$locale])) {
+        if (! isset($this->registry[$name][$locale])) {
             throw new Exception("Package '$name' with locale '$locale' is not registered.");
         }
 
-        if (!$this->converted[$name][$locale]) {
+        if (! $this->converted[$name][$locale]) {
             $func = $this->registry[$name][$locale];
             $this->registry[$name][$locale] = $func();
             $this->converted[$name][$locale] = true;
